@@ -1,0 +1,28 @@
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    border: 3px solid white;
+    padding-inline: 55px;
+    z-index: 5;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Avenir", Sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-right: 40px;
+}

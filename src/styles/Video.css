@@ -1,0 +1,9 @@
+.home-video-div video {
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+.home-video-div {
+    width: 100%;
+}
