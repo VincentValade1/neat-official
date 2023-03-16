@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
+import '../styles/Footer.css'
 
 function Footer() {
     return (
         <footer>
             <Link to='/'>
-                {/* <img src=''/> */}
-                <p>hehe</p>
+               
             </Link>
         </footer>
     )

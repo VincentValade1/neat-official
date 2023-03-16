@@ -1,7 +1,5 @@
-
-import '../styles/Video.css'
 import React, { useEffect, useRef } from "react";
-
+import '../styles/Video.css'
 
 export default function VideoBanner({src, alt}) {
     const videoEl = useRef(null);

@@ -1,9 +1,25 @@
 .home-video-div video {
     object-fit: cover;
     width: 100%;
-    
+    height: 100vh;
 }
 
 .home-video-div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+   
+    /* left: 0; */
     width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    box-shadow: inset 0 0 400px #000000;
+    background: radial-gradient(#00000000, #000000e3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
