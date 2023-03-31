@@ -1,12 +1,11 @@
-import { Link } from 'react-router-dom'
+
 import '../styles/Footer.css'
+import ExtLinksBar from './ExtLinksBar';
 
 function Footer() {
     return (
         <footer>
-            <Link to='/'>
-               
-            </Link>
+            <ExtLinksBar className="extLinksBar-footer"/>
         </footer>
     )
 }

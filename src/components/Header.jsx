@@ -1,20 +1,80 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom' // activeClassName de Navlink applique du style au lien cliqué en cours
 import '../styles/Header.css'
-import ExtLinksBar from './ExtLinksBar';
+import logo from '../assets/logoofficiel.png'
 
-function Header() {
+// import ExtLinksBar from './ExtLinksBar';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+
+function Header({ className }) {
+
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   function toggleNav() {
+//     setIsOpen(!isOpen);
+//   }
+
+    const [showNavbar, setShowNavbar] = useState(false)
+
+    const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar)
+    }
+
+
+
     return (
         <header>
-            <nav>
+            {/* voir pour mettre null a la place de string vide */}
+            <div className={`logo-div ${ className ? 'logo-anim' : ""}`}>
+                <img src={logo} alt="logo du groupe Neat" />
+            </div>
+            <nav className="navbar">
+                <div className="container">
+                    <div className="menu-icon" onClick={handleShowNavbar}>
+                        <FontAwesomeIcon icon={faBars} />
+                    </div>
+                    <div className={`nav-elements  ${showNavbar && 'active'}`}>
+                        <ul>
+                            <li>
+                                <NavLink activeClassName='active' to='/'>HOME</NavLink>
+                            </li>
+                            <li>
+                                <NavLink activeClassName='active' to='/biography'>BIO</NavLink>
+                            </li>
+                            <li>
+                                <NavLink activeClassName='active' to='/discography'>DISCOGRAPHY</NavLink>
+                            </li>
+                            <li>
+                                <a href='https://neatofficial.bandcamp.com/merch' target="_blank" rel="noreferrer noopener">SHOP</a>
+                            </li>
+                            <li>
+                                <NavLink activeClassName='active' to='/tour'>TOUR</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            {/* <nav>
                 <div className='mainNav'>
-                    <Link to='/'>HOME</Link>
-                    <Link to='/biography'>BIO</Link>
-                    <Link to='/discography'>DISCOGRAPHY</Link>
-                    <a href='https://neatofficial.bandcamp.com/merch'>SHOP</a>
-                    <Link to='/tour'>TOUR</Link>
+                    <button type="button" className="navbar-toggle" onClick={toggleNav}>
+                    <FontAwesomeIcon icon={faBars} />
+                    </button>
+                    <div className={`navbar-collapse ${isOpen ? 'collapse-in' : ''}`}>
+                        <ul className="nav navbar-nav">
+                            <Link className='active' to='/'>HOME</Link>
+                            <Link to='/biography'>BIO</Link>
+                            <Link to='/discography'>DISCOGRAPHY</Link>
+                            <a href='https://neatofficial.bandcamp.com/merch'>SHOP</a>
+                            <Link to='/tour'>TOUR</Link>
+                        </ul>
+                    </div>
                 </div>
                 <ExtLinksBar className="extLinksBar-header" />
-            </nav>
+            </nav> */}
+
+
         </header>
     )
 }

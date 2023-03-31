@@ -1,0 +1,28 @@
+@keyframes logoAnim {
+    0% {
+        opacity: 0;
+        width: 50%;
+        transform: translate(+40%, +250%);
+    } 15% {
+        opacity: 0;
+    } 35% {
+        opacity: 0.1;
+    } 70% {
+        width: 50%;
+        opacity: 1;
+        transform: translate(+40%, +50%);
+    }
+}
+
+.logo-div {
+    height: 100px;
+    position: fixed;
+    display: contents;
+    top: 0;
+    z-index: 1;   
+}
+
+.logo-div img {
+    margin: auto;
+    width: 163px;
+}

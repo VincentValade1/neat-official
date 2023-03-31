@@ -1,8 +1,12 @@
+import Logo from "../components/Logo"
+import '../styles/Logo.css'
+
 function Bio() {
     return (
-        <div>
-            <p>Apropos</p>
-            <p></p>
+        <div className="bioSection">
+            <Logo className="logo-div" />
+            {/* <p>Apropos</p>
+            <p></p> */}
         </div>
         
     )

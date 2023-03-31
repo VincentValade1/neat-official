@@ -1,0 +1,52 @@
+@keyframes clip-link-anim {
+    25% {
+        transform: translateY(+200%) translateX(-50%);
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+.clip-link-section {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80%;
+    height: fit-content;
+    margin-inline: 40px;
+    position: fixed;
+    border: 15px double rgb(107, 107, 107);
+    z-index: 20;
+    background-color:rgba(0, 0, 0, 0.6);
+    padding: min(20px);
+    opacity: 0;
+    animation: clip-link-anim 7s  ease-in-out forwards;
+    overflow: hidden;
+}
+
+.clip-link-section h1 {
+    color: white;
+    font-size: 3.5lvw;
+    margin-top: 0;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.clip-link-section img {
+    width: 100%;
+}
+
+.eyeLinkIcon  {
+    color: lime;
+    height: 40%;
+    opacity: 0.7;
+    position: absolute;
+    left: 35%;
+    top: 34%;
+}
+
+.eye-mini-div {
+    max-width: 300px;
+    border: 3px solid  rgb(107, 107, 107);
+    position: relative;
+}

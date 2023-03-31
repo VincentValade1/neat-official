@@ -1,0 +1,22 @@
+.extLinksBar-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.extLinksBar-footer li {
+    width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extLinksBar-footer a{
+    font-size: 30px;
+    color: white;
+    transition: all .1s ease-out;
+}
+
+.extLinksBar-footer a:hover {
+    color: lime;
+    transform: scale(1.2);
+}

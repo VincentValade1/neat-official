@@ -4,14 +4,12 @@ import Bio from "../pages/Bio";
 import Discography from "../pages/Discography"
 import Tour from "../pages/Tour";
 import Error from "../pages/Error";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 
 function Router() {
     return (
         <BrowserRouter>
-            <Header />
             <Routes>
                 <Route exact path='/' element={<Home />} />
                 <Route exact path='/biography' element={<Bio />} />

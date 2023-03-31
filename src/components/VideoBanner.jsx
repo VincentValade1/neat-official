@@ -16,5 +16,10 @@ export default function VideoBanner({src, alt}) {
         attemptPlay();
     }, []);
 
-    return (<video src={src} alt={alt} ref={videoEl} playsInline autoPlay loop muted />)
+    return (
+        <div className='home-video-div'>
+            <div className="overlay"></div>
+            <video src={src} alt={alt} ref={videoEl} playsInline autoPlay loop muted />)
+        </div>
+    )
 };
