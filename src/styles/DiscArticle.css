@@ -1,0 +1,26 @@
+.disc-cover {
+    flex: 1;
+}
+
+.disc-cover img {
+    width: 100%;
+    box-shadow: -7px -7px 13px rgb(54, 54, 54);
+    border: 4px solid black;
+}
+
+.disc-article {
+    display: flex;
+    gap: 40px;
+}
+
+.disc-infos {
+    flex: 1;
+}
+
+.disc-infos h2 {
+    margin: 0;
+}
+
+.jtf-disc {
+    flex-direction: row-reverse;
+}

@@ -1,3 +1,21 @@
+@keyframes logoAnim {
+  0% {
+      opacity: 0;
+      width: 50%;
+      transform: translate(+50%, +250%);
+  } 15% {
+      opacity: 0;
+  } 35% {
+      opacity: 0.1;
+  } 70% {
+      width: 50%;
+      opacity: 1;
+      transform: translate(+50%, +65%);
+  } 80% {
+    /* width: 25%; */
+  }
+}
+
 header {
     position: fixed;
     top: 0;
@@ -9,7 +27,7 @@ header {
     backdrop-filter: blur(10px);
 }
 
-header nav {
+.navbar {
     width: 100%;
     display: flex;
     z-index: 10;
@@ -31,7 +49,7 @@ header nav a.active {
 }
 
 header nav li {
-  transition: all .2s ease-out;
+  transition: scale .1s ease-out;
 }
 
 header nav li:hover {
@@ -47,11 +65,24 @@ header nav a:hover {
 }
 
 .home-page-div .logo-anim img {
-  animation: logoAnim 5.5s  normal ease-in-out forwards;
+  animation: logoAnim 3s  normal ease-in-out forwards;
+}
+
+.logo-div {
+  height: 100px;
+  position: fixed;
+  display: contents;
+  top: 0;
+  z-index: 1;   
+}
+
+.logo-div img {
+  margin: auto;
+  width: 163px;
 }
 
 
-
+/* toggle */
 
 .navbar-collapse {
     display: none;
@@ -85,6 +116,7 @@ header nav a:hover {
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    position: fixed;
   }
   
   .navbar {
@@ -104,7 +136,7 @@ header nav a:hover {
   }
   
   .nav-elements ul li:not(:last-child) {
-    margin-right: 60px;
+    margin-right: 45px;
   }
   
   .nav-elements ul a {
@@ -128,13 +160,13 @@ header nav a:hover {
     background-color: #574c4c;
   } */
 
-  @media (max-width: 1040px) {
+  @media screen and (max-width: 1040px) {
     .nav-elements ul li:not(:last-child) {
       margin-right: 30px;
     }
   }
   
-  @media (max-width: 1040px) {
+  @media screen and (max-width: 1040px) {
     .menu-icon {
       display: block;
       cursor: pointer;

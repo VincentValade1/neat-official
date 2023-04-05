@@ -3,6 +3,7 @@ import showList from '../datas/tourDates.json';
 import Header from '../components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faTowerBroadcast} from '@fortawesome/free-solid-svg-icons'
+import MainDisplay from '../components/MainDisplay';
 
 function Tour() {
     const sortArrayOfObjects = (arr, propertyName, order = 'ascending') => {
@@ -28,9 +29,8 @@ function Tour() {
     return(
         <>
             <Header />
-            <main className="tourMain">
-                <h1>UPCOMING SHOWS</h1>
-                <ul className='datesDiv'>
+            <MainDisplay title={"UPCOMING SHOWS"} className="upcomingShows">
+                <ul>
                     {sortedDates.map(({date, place, city, country, eventLink}) => 
                         (
                             <li className='dateRow' key={date}>
@@ -42,9 +42,8 @@ function Tour() {
                         )
                     )}
                 </ul>
-                <span>Updated List <FontAwesomeIcon icon={faTowerBroadcast} fade style={{color: "#ffffff",}} /></span>
-                
-            </main>
+                <span className='updatedList-span'>Updated List <FontAwesomeIcon icon={faTowerBroadcast} fade style={{color: "#ffffff",}} /></span>
+            </MainDisplay>
         </> 
     )
 }

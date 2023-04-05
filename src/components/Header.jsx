@@ -38,19 +38,22 @@ function Header({ className }) {
                     <div className={`nav-elements  ${showNavbar && 'active'}`}>
                         <ul>
                             <li>
-                                <NavLink activeClassName='active' to='/'>HOME</NavLink>
+                                <NavLink activeclassname='active' to='/'>HOME</NavLink>
                             </li>
                             <li>
-                                <NavLink activeClassName='active' to='/biography'>BIO</NavLink>
+                                <NavLink activeclassname='active' to='/biography'>BIO</NavLink>
                             </li>
                             <li>
-                                <NavLink activeClassName='active' to='/discography'>DISCOGRAPHY</NavLink>
+                                <NavLink activeclassname='active' to='/discography'>DISCOGRAPHY</NavLink>
                             </li>
                             <li>
                                 <a href='https://neatofficial.bandcamp.com/merch' target="_blank" rel="noreferrer noopener">SHOP</a>
                             </li>
                             <li>
-                                <NavLink activeClassName='active' to='/tour'>TOUR</NavLink>
+                                <NavLink activeclassname='active' to='/tour'>TOUR</NavLink>
+                            </li>
+                            <li>
+                                <NavLink activeclassname='active' to='/contact'>CONTACT</NavLink>
                             </li>
                         </ul>
                     </div>

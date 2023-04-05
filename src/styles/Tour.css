@@ -1,4 +1,4 @@
-.tourMain {
+.mainDisplay {
     color: white;
     background-size: cover;
     background-attachment: fixed;
@@ -12,17 +12,27 @@
     flex-direction: column;
 }
 
-.tourMain h1 {
+.mainDisplay h1 {
     font-family: 'Poiret One', cursive;
     font-size: 60px;
 }
 
-.datesDiv {
-    border: 6px double grey ;
+.mainContentDiv {
+    display: flex;
+    flex-direction: column;
+    border: 10px double grey ;
     background-color: rgba(0,0,0,0.7);
-    width: 70%;
     padding-inline: 20px;
     margin: 20px auto 5px auto;
+    align-items: center;
+}
+
+.upcomingShows, .bioSection {
+    width: 70%;
+}
+
+.upcomingShows ul {
+    width: 100%;
 }
 
 .dateRow {
@@ -38,15 +48,15 @@
     height: 100%;
 }
 
-.datesDiv a {
+.mainContentDiv a {
     color: white;
     text-decoration: none;
 }
 
-.datesDiv a:hover {
+.mainContentDiv a:hover {
     color: lime;
 }
 
-.datesDiv a, .event-to-come {
+.mainContentDiv a, .event-to-come {
     font-size: 16px;
 }

@@ -1,0 +1,14 @@
+/* .bioSection {
+    padding: 4% 4% 3% 4%;
+} */
+
+.bioSection p {
+    margin-top: 0;
+    font-size: 17px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.bioSection {
+    padding: 20px;
+}

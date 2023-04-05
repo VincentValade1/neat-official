@@ -1,0 +1,6 @@
+.discographySection {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
