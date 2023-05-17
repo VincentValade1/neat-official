@@ -14,7 +14,7 @@ function Router() {
         <BrowserRouter>
             <ScrollToTop />
             <Routes>
-                <Route exact path='/' element={<Home />} />
+                <Route exact path='neat-official' element={<Home />} />
                 <Route exact path='/biography' element={<Bio />} />
                 <Route exact path='/discography' element={<Discography />} />
                 <Route exact path='/tour' element={<Tour />} />
