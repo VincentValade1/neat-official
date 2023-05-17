@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/neat-official/static/css/main.8be88c90.css",
+    "main.js": "/neat-official/static/js/main.644b7bca.js",
+    "static/js/787.7b591e85.chunk.js": "/neat-official/static/js/787.7b591e85.chunk.js",
+    "static/media/eye_site_background_NB.mp4": "/neat-official/static/media/eye_site_background_NB.114e471d228672238bbb.mp4",
+    "static/media/FondTexturéAlbum.png": "/neat-official/static/media/FondTexturéAlbum.da3e280d0ce1d8dcf4f5.png",
+    "static/media/logoofficiel.png": "/neat-official/static/media/logoofficiel.3dc8c7f98e9a1edd413e.png",
+    "static/media/eye_clip_mini.webp": "/neat-official/static/media/eye_clip_mini.7c07b10c670e00e8c9b6.webp",
+    "index.html": "/neat-official/index.html",
+    "main.8be88c90.css.map": "/neat-official/static/css/main.8be88c90.css.map",
+    "main.644b7bca.js.map": "/neat-official/static/js/main.644b7bca.js.map",
+    "787.7b591e85.chunk.js.map": "/neat-official/static/js/787.7b591e85.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8be88c90.css",
+    "static/js/main.644b7bca.js"
+  ]
+}
