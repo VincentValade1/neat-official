@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Bio from "../pages/Bio";
 import Discography from "../pages/Discography"
@@ -11,10 +11,10 @@ import ScrollToTop from "../components/ScrollToTop";
 
 function Router() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <ScrollToTop />
             <Routes>
-                <Route exact path='neat-official' element={<Home />} />
+                <Route exact path='/' element={<Home />} />
                 <Route exact path='/biography' element={<Bio />} />
                 <Route exact path='/discography' element={<Discography />} />
                 <Route exact path='/tour' element={<Tour />} />
@@ -23,7 +23,7 @@ function Router() {
                 <Route exact path='/pageError404'element={<Error />} />
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
