@@ -6,6 +6,8 @@ import {faTowerBroadcast} from '@fortawesome/free-solid-svg-icons'
 import MainDisplay from '../components/MainDisplay';
 
 function Tour() {
+    const futurDatesArray = showList.filter(element => new Date(element.date) > new Date())
+
     const sortArrayOfObjects = (arr, propertyName, order = 'ascending') => {
         const sortedArr = arr.sort((a, b) => {
             if (a[propertyName] < b[propertyName]) {
@@ -20,12 +22,13 @@ function Tour() {
         if (order === 'descending') {
             return sortedArr.reverse();
         }
-      
+
         return sortedArr;
     };
-
-    const sortedDates = sortArrayOfObjects(showList, "date");
     
+    const sortedDates = sortArrayOfObjects(futurDatesArray, "date");
+
+    // dates.filter(element => new Date(element.date) < new Date("2023-4-11")
     return(
         <>
             <Header />
