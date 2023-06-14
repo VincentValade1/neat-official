@@ -32,7 +32,7 @@
         "place": " Bar KJBI",
         "city": "Montpellier (34)",
         "country": "France",
-        "eventLink": ""
+        "eventLink": "https://fb.me/e/2VvwJBbcL"
     },
     {
         "date": "2023-7-14",
@@ -49,10 +49,17 @@
         "eventLink": ""
     },
     {
-        "date": "2023-6-02",
+        "date": "2023-6-17",
         "place": "Le Connexion Live",
         "city": "Toulouse (31)",
         "country": "France",
-        "eventLink": ""
+        "eventLink": "https://fb.me/e/10W1skebO"
+    },
+    {
+        "date": "2023-7-22",
+        "place": "T Rock Fest",
+        "city": "Saint Morin (47)",
+        "country": "France",
+        "eventLink": "https://www.facebook.com/events/1195150281413222"
     }
 ]

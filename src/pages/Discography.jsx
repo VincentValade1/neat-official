@@ -1,10 +1,11 @@
 import Header from "../components/Header"
 import DiscArticle from "../components/DiscArticle"
-import discography from "../discography.json"
+import discography from "../datas/discography.json"
 import '../styles/Discography.css'
 import MainDisplay from "../components/MainDisplay"
 
 function Discography() {
+    
     return (
         <>
             <Header />

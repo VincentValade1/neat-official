@@ -22,10 +22,11 @@ code {
 
 * {
   box-sizing: border-box;
+  object-fit: cover;
 }
 
 #root {
-  height: 100vh;
+  height: auto;
 }
 
 main {

@@ -6,6 +6,8 @@ import eyeMini from '../assets/eye_clip_mini.webp'
 import Header from '../components/Header'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import Slideshow from '../components/Slideshow'
+// import pictures from '../datas/pictures.json'
 
 
 function Home() {
@@ -13,7 +15,7 @@ function Home() {
         <div className="home-page-div">
             <Header className="logo-anim" />
             <VideoBanner src={homeVideo} alt={"eye clip teaser"} />
-            <main>
+            <main className='main-home'>
                 <section className="clip-link-section">
                     <h1>Découvrez le clip du morceau "Eye" issu du premier Album de Neat</h1> 
                     <div className="eye-mini-div">
@@ -23,6 +25,7 @@ function Home() {
                         </a>
                     </div>
                 </section>
+                <Slideshow />
             </main>
         </div>
         

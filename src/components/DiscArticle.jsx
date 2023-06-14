@@ -1,17 +1,18 @@
 import '../styles/DiscArticle.css';
 
-function DiscArticle({ name, cover, yearRelease, description, type, tracks, totalLength}) {
+function DiscArticle(props) {
     return (
-        <article key={name} className={`disc-article ${ name === "Neat" ? "neat-disc" : "jtf-disc"}`}>
+        <article key={props.name} className={`disc-article ${ props.name === "Neat" ? "neat-disc" : "jtf-disc"}`}>
             <div className="disc-cover">
-                <img src={cover} alt="front cover of the disc" />
+                {/* pour afficher les images, utiliser le process.env.PUBLIC_URL  */}
+                <img src={process.env.PUBLIC_URL + props.cover} alt="front cover of the disc" />
             </div>
             <div className="disc-infos">
-                <h2>{name}</h2>
-                <span>{type} sorti en {yearRelease}</span>
-                <p>{description}</p>
-                <span>Nombre de morceaux: {tracks}</span><br/>
-                <span>Durée: {totalLength}</span>
+                <h2>{props.name}</h2>
+                <span>{props.type} sorti en {props.yearRelease}</span>
+                <p>{props.description}</p>
+                <span>Nombre de morceaux: {props.tracks}</span><br/>
+                <span>Durée: {props.totalLength}</span>
             </div>
         </article>
     )

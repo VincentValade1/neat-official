@@ -60,9 +60,9 @@ header nav a:hover {
     color: lime;   
 }
 
-.home-page-div header {
+/* .home-page-div header {
   backdrop-filter: blur(0);
-}
+} */
 
 .home-page-div .logo-anim img {
   animation: logoAnim 3s  normal ease-in-out forwards;

@@ -7,17 +7,27 @@
     }
 }
 
+.main-home {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+}
+
 .clip-link-section {
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
     max-width: 80%;
-    height: fit-content;
+    height: 100vh;
+    margin-top: 150px;
+    margin-bottom: 100px;
     margin-inline: 40px;
-    position: fixed;
+    height: 500px;
+    /* position: fixed; */
     border: 15px double rgb(107, 107, 107);
-    z-index: 20;
+    z-index: 9;
     background-color:rgba(0, 0, 0, 0.6);
     padding: min(20px);
     opacity: 0;

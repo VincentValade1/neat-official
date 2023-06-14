@@ -1,0 +1,47 @@
+[
+    {
+        "imageUrl": "/images/BanderoleYT_FondBlancVert.jpg",
+        "alt": "Picture 1",
+        "link": "https://linktr.ee/neatofficial"
+    },
+    {
+        "imageUrl": "/images/BanderoleYT_FondNoir3_72.jpg",
+        "alt": "Picture 2",
+        "link": "https://github.com/VincentValade1"
+    },
+    {
+        "imageUrl": "/images/DSC02187.jpg",
+        "alt": "Picture 3",
+        "link": ""
+    },
+    {
+        "imageUrl": "/images/DSC02220.jpg",
+        "alt": "Picture 4",
+        "link": ""
+    },
+    {
+        "imageUrl": "/images/image00004.jpg",
+        "alt": "Picture 5",
+        "link": ""
+    },
+    {
+        "imageUrl": "/images/image00011.jpg",
+        "alt": "Picture 6",
+        "link": ""
+    },
+    {
+        "imageUrl": "/images/image00015.jpg",
+        "alt": "Picture 7",
+        "link": ""
+    },
+    {
+        "imageUrl": "/images/uam_1.jpg",
+        "alt": "Picture 8",
+        "link": ""
+    },
+    {
+        "imageUrl": "/images/uam_2.jpg",
+        "alt": "Picture 9",
+        "link": ""
+    }
+  ]
